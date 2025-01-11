@@ -1,0 +1,144 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* App Container */
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #4caf50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Task Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Filter Buttons */
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter button {
+  padding: 8px 12px;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  background-color: white;
+  color: #4caf50;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filter button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.filter button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+li input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+li span {
+  flex-grow: 1;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li button {
+  padding: 6px 10px;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #e04747;
+}
+
+/* No Tasks Message */
+p {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
